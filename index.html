@@ -70,11 +70,13 @@
         </ul>
       </div>
 
-      <!-- Decorative paintbrush-flower illustration -->
-      <div class="hero__art reveal" aria-hidden="true">
-        <svg viewBox="0 0 260 420" class="flower">
-          <use href="assets/logo.svg#paintbrush-flower" />
-        </svg>
+      <!-- Indian paintbrush wildflower photo -->
+      <div class="hero__art reveal">
+        <figure class="hero__photo">
+          <img src="assets/hero-flower.jpg" width="900" height="1348"
+               alt="A scarlet Indian paintbrush wildflower in bloom against soft green" />
+          <span class="hero__photo-accent" aria-hidden="true"></span>
+        </figure>
       </div>
     </div>
     <div class="brush-divider" aria-hidden="true"></div>
@@ -84,7 +86,12 @@
   <section class="about section" id="about">
     <div class="container about__grid">
       <div class="about__media reveal">
-        <div class="photo photo--tall" data-label="Add a photo of the painter at work"></div>
+        <img class="about__photo about__photo--main" src="assets/about-closeup.jpg"
+             width="1000" height="1333"
+             alt="Close-up of an Indian paintbrush bloom in coral and red" />
+        <img class="about__photo about__photo--inset" src="assets/about-cluster.jpg"
+             width="760" height="1140"
+             alt="A cluster of red Indian paintbrush stalks in a meadow" />
         <div class="swatches" aria-hidden="true">
           <span style="--c:#C1362F"></span>
           <span style="--c:#E4784B"></span>
@@ -193,6 +200,15 @@
     </div>
   </section>
 
+  <!-- ============ BRAND BANNER ============ -->
+  <section class="banner" aria-label="About the Indian paintbrush">
+    <div class="banner__overlay"></div>
+    <div class="container banner__inner reveal">
+      <p class="banner__eyebrow">The wildflower we're named for</p>
+      <p class="banner__line">Bold, natural color — the way it grows in the wild.</p>
+    </div>
+  </section>
+
   <!-- ============ PROCESS ============ -->
   <section class="process section section--dark" id="process">
     <div class="container">
@@ -228,9 +244,10 @@
 
   <!-- ============ TESTIMONIALS ============ -->
   <section class="quotes section">
+    <div class="quotes__bg" aria-hidden="true"></div>
     <div class="container">
       <div class="section__head reveal">
-        <p class="eyebrow">Kind words</p>
+        <p class="eyebrow eyebrow--light">Kind words</p>
         <h2>What neighbors say</h2>
       </div>
       <div class="quotes__grid">

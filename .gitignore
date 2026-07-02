@@ -12,3 +12,12 @@ desktop.ini
 # Logs / temp
 *.log
 node_modules/
+
+# High-res photo originals — kept locally as source; the site serves the
+# web-optimized versions (assets/hero-flower.jpg, about-*.jpg, banner-*.jpg,
+# quotes-bg.jpg) generated from these.
+assets/indianpaintbrush.jpg
+assets/closeup.jpg
+assets/more.jpg
+assets/mountainflower.jpg
+assets/multipleflowerswideshot.jpg
