@@ -237,9 +237,11 @@ h3 { font-size: 1.3rem; }
 .about__media { position: relative; padding-bottom: 2.5rem; }
 
 .about__photo { display: block; }
+/* explicit height (not aspect-ratio) so the HTML width/height attributes
+   can't force a stretched box; object-fit: cover crops cleanly. */
 .about__photo--main {
   width: 100%;
-  aspect-ratio: 4/5;
+  height: clamp(380px, 44vw, 540px);
   object-fit: cover;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
@@ -247,11 +249,11 @@ h3 { font-size: 1.3rem; }
 /* smaller overlapping photo, bottom-right */
 .about__photo--inset {
   position: absolute;
-  right: -14px;
+  right: -16px;
   bottom: 0;
-  width: 42%;
+  width: 44%;
   max-width: 190px;
-  aspect-ratio: 3/4;
+  height: clamp(160px, 22vw, 240px);
   object-fit: cover;
   border-radius: 14px;
   border: 5px solid #fff;
